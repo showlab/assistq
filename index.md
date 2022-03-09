@@ -19,3 +19,6 @@ methods while still having large room for improvement. We expect our
 task and dataset to advance Egocentric AI Assistant’s development. 
 
 ![photo](/dialogue.png)
+
+## code
+You can find the code in this repository [repo](https://github.com/ChenJoya/q2a/).
