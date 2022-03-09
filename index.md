@@ -20,5 +20,5 @@ task and dataset to advance Egocentric AI Assistant’s development.
 
 ![photo](/dialogue.png)
 
-## Code
+## Codes
 You can find the codes in this [repository](https://github.com/ChenJoya/q2a/).
