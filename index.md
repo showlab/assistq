@@ -18,4 +18,4 @@ like press/turn). To address this unique task, we developed a Questionto-Actions
 methods while still having large room for improvement. We expect our
 task and dataset to advance Egocentric AI Assistant’s development. 
 
-![photo](/assistq/assets/dialogue.png)
+![photo](/assets/dialogue.png)
