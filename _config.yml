@@ -1,8 +1,56 @@
-logo: showlab.png
+# Site settings
 title: AssistQ
-description: Affordance-centric Question-driven Task Completion for Egocentric Assistant
-remote_theme: pages-themes/minimal@v0.2.0
+email: your-email@domain.com
+description: >
+  Affordance-centric Question-driven Task Completion for Egocentric Assistant
+lang: en-US
+
+#baseurl: "/assistq" # the subpath of your site, e.g. /blog/
+url: https://962479949.github.io # the base hostname & protocol for your site
+#git_address: https://github.com/showlab/Q2A
+
+# theme options from https://bootswatch.com/3/
+# comment out this to use default Bootstrap
+bootwatch: paper # cerulean cosmo custom cyborg darkly flatly journal lumen readable sandstone simplex slate solar spacelab superhero united yeti
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+# Plugins (previously gems:)
 plugins:
-- jekyll-remote-theme
-gem "github-pages", group: :jekyll_plugins
-theme: jekyll-theme-minimal
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .idea/
+  - .gitignore
+  - README.md
+  - vendor
+timezone: Europe/Berlin
+defaults:
+- scope:
+    path: _posts
+    type: posts
+  values:
+    layout: post
+    sectionid: blog
+
+- scope:
+    path: _docs
+    type: docs
+  values:
+    layout: docs
+    sectionid: docs
+    seo:
+      type: "WebPage"
+
+collections:
+  docs:
+    permalink: /:collection/:path/
+    output: true
+  posts:
+    permalink: /blog/:year/:month/:day/:title/
+    output: true
